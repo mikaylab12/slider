@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(/images/wp2757834-wallpaper-gif.gif);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15%;
+  min-height: 100vh;
+}
+
+h2 {
+  color: black;
+  justify-self: center;
+  align-self: flex-end;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
+h3 {
+  color: whitesmoke;
+  justify-self: center;
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: large;
+}
+
+q {
+  color: black;
+  background-color: none;
+  font-style: italic;
+}
+
+.owl-carousel {
+  overflow: hidden;
+}
+
+.testimonials {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: slategray;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 200px;
+  align-self: center;
+  height: 300px;
+  padding: 50px;
+  margin: 10px;
+}
+
+.words {
+  color: black;
+  display: grid;
+  grid-column-start: 2;
+}
+
+@media screen and (max-width: 700px) {
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .owl-carousel .owl-item img {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+  }
+}
